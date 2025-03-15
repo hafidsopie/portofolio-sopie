@@ -1,0 +1,234 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#00c6ff 10%, #0072ff 40%, #004e92 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* ====== Navbar =====*/
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8d210;
+}
+
+/* ====== Halaman Utama ====== */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    padding: 50px 20px;
+    gap: 20px; 
+    padding: 50px 10%; 
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    flex-direction: row-reverse
+}
+
+.hero-text {
+    max-width: 80%;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #ffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    color: #f0f0f0;
+    margin-top: 20px;
+}
+
+/*======== Styling Foto =========*/
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    background-color: #ffff;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* ====== Tentang Saya ====== */
+.container_tentang{
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 0 50px;
+}
+
+#tentang {
+    background-color: white;
+    padding: 60px 0;
+    font-size: large;
+}
+
+
+#tentang img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#tentang .card {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}
+
+/* ====== Pengalaman ======== */
+
+.container_pengalaman{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0072ff;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    margin-bottom: -50px;
+}
+#pengalaman .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pengalaman .card {
+    flex: 1 1 300px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 10px;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.card-body img {
+    max-width: 90px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.8s;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/*======== Sertifikat ==========*/
+.container_sertifikat{
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 50px 20px;
+}
+#sertifikat .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sertifikat .card {
+    flex: 1 1 300px;
+    max-width: 100%;
+    margin: 30px;
+    /* padding: 10px; */
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    height: 500px;
+}
+
+.card-img-overlay {
+    border-radius: 10px;
+    transition: background 10.0 s ease-in-out;
+}
+
+.card-img-overlay:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width: 768px) {
+    .container_pengalaman{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .container_sertifikat {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} 
